@@ -1,0 +1,26 @@
+# Binaries and build artifacts
+/bin/
+/pkg/
+/out/
+*.exe
+*.out
+*.a
+*.so
+*.o
+*.obj
+
+# Dependencies (if not committing vendor/)
+vendor/
+
+# Coverage and debugging
+/coverage.out
+
+# Logs and temporary files
+*.log
+/tmp/
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo

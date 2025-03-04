@@ -1,0 +1,12 @@
+root = "."  
+tmp_dir = "tmp"  
+
+[build]
+  cmd = "go build -o ./tmp/main.exe ."  # Add .exe for Windows
+  bin = "./tmp/main.exe"  # Add .exe for Windows
+  delay = 1000  # Delay in milliseconds before restarting
+  full_bin = false  # Change from "true" to "false" (avoids the "true.exe" error)
+
+[watch]
+  includes = ["*.go"]
+  excludes = ["tmp", "vendor"]
