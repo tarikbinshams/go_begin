@@ -95,7 +95,6 @@ func GetUsers(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetUser(w http.ResponseWriter, r *http.Request) {
-	// Get collection
 	var userCollection *mongo.Collection = config.GetCollection("users")
 	w.Header().Set("Content-Type", "application/json")
 
@@ -126,7 +125,6 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func UpdateUser(w http.ResponseWriter, r *http.Request) {
-	// Get collection
 	var userCollection *mongo.Collection = config.GetCollection("users")
 	w.Header().Set("Content-Type", "application/json")
 
@@ -158,7 +156,6 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeleteUser(w http.ResponseWriter, r *http.Request) {
-	// Get collection
 	var userCollection *mongo.Collection = config.GetCollection("users")
 	w.Header().Set("Content-Type", "application/json")
 
